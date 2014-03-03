@@ -6,9 +6,11 @@ require 'spec_helper.rb'
 describe "Ruby Diagnostic: You" do
 
   you "can deduce how to write a method based on a spec" do
+    def toggle_oven
     expect( toggle_oven(true) ).to eq "The oven is now on"
     expect( toggle_oven(false) ).to eq "The oven is now off"
   end
+end
 
   xyou "know how to call a method within another method" do
     result = give_me_seven
